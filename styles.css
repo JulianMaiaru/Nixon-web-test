@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background: #ffffff;
+    color: #000000;
+}
+
+.container a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1500px;
+    min-width: 300px;
+}
+
+/* NAVEGACION */
+.nav-main {
+    font-size: 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    align-items: flex-start;
+    height: 20px;
+    padding: 20px 0;
+}
+
+/*imagen de LOGO y LOGOLETRA*/
+.nav-brand {
+    width: 70px;
+}
+.nav-logoletra {
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 42%;
+}
+
+/* NAV IZQUIERDA */
+.nav-main ul {
+    display: flex; 
+}
+
+.nav-main ul li {
+    padding: 30px;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 80px;
+}
+
+.nav-menu li a:hover{ 
+    border-bottom: solid #FFFFFF;
+    text-decoration: 3px underline #000000; 
+    line-height: 1px;
+}
+
+.container hr {
+    margin: 10px 0; 
+    margin-top: 60px; 
+    border: 1px solid; 
+}
+
+/* LOGOS REDES */
+
+.redes-containers:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter:opacity(2);
+}
+
+.redes-containers li a:hover{
+    transform: translate(-3px) scale(1.5);
+    filter: none;
+}
+
+.redes-containers li a{
+ display: block;
+ padding: 0px 10px;
+ color: #000000;
+ line-height: 30px;
+ font-size: 25px;
+ border-top: 100px;
+ filter: none;
+}
+
+/* VIDEO */
+
+video {
+    width:80%;
+}
+
+.showcase {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
+}
+
+/*GALERIA DE ARTE*/
+
+.gallery-container {
+    width: 80%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (3, 300px);
+}
+
+.gallery-container .art-main a {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.art-main img{
+    width: 30%;      
+    height: 15%;     
+    object-fit: cover;
+    transition: 1s;
+    filter: grayscale(50%);
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+}
+
+.art-main img:hover {
+    filter: grayscale(0%) ;
+    transform: scale(1.1);
+}
+
+/**PIE DE PAGINA **/
+
+
+.page-bottom p {
+    font-family: 'calibri';
+    text-align: center;
+    color:rgb(121, 120, 120);
+    margin-bottom: 50px;
+}
+
+.page-bottom hr {
+      width: 50%;
+      margin-left: 25%;
+}
+
+/** SHOP **/
+
+h2 {
+    justify-content: center;
+    display: center;
+    text-align: center;
+    padding:50px 50px;
+    margin-right: 50px;
+    font-family: 'calibri';
+    font-style: bold;
+}
+
+.shop-container {
+    padding: 30px 30px;
+    width: 80%;
+    margin: auto;
+    columns: 3;
+    align-items: center;
+    font-family: 'calibri';
+    text-align: center;
+}
+
+.product-container {
+    width: 100%;
+    height: 300px;
+    padding: 0px;
+}
+
+.product-container img {
+    width: 80%;      
+    height: 80%;     
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+    border: 2px solid #000000;
+}
+
+
+/** CONTACTO **/
+
+.form_warp {
+    font-family: 'calibri';
+    width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;  
+    border-radius: 15px;
+    overflow: hidden;
+}
+.contact_info::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position:absolute;
+    top: 0;
+    left: 0;
+
+    background: #000000;
+    opacity: 0.4 ;
+}
+
+.info_title,
+.info_items{
+    position: relative;
+    z-index: 2;
+}
+
+.contact_info{
+    width: 40%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('images/logo.png');
+    color:#ffffff;
+}
+
+.info_title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.info_title span {
+    font-size: 100px;
+    display:block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info_title h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.info_items p {
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info_items p:nth-child(1) span {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.info_items p:nth-child(2) span {
+    font-size: 35px;
+    margin-right: 15px;
+    margin-left: 4px;
+}
+
+form.form_contact {
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form_contact h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+form.form_contact .user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label {
+    font-weight: 600;
+}
+
+:focus{ 
+    outline: none;
+}
+
+form.form_contact input,
+form.form_contact textarea{
+    width: 100%;
+    padding: 8px 5px 5px;
+    margin-bottom: 30px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    font-family: 'calibri';
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 400;
+
+    resize: none;
+    overflow-y: auto;
+}
+
+form.form_contact textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 100px;
+}
+
+form.form_contact input[type="submit"] {
+    width: 180px;
+    background: #D1D1D1;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    color:black;
+    font-weight: bold;
+
+    align-self: flex-end; 
+}
+
+form.form_contact input[type="submit"]:hover{
+    background-color:#7e7c7c;
+    cursor: pointer;
+}
+
+/*Ventana de Errores*/
+
+.model_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal {
+    background: #FFFFFF ;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5) ;
+    width: 400px ;
+    padding: 30px 20px 15px;
+    border-radius: 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-family: 'calibri';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mensaje_modal h3:after { 
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #c5c5c5;
+    margin:10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 17px;
+    color: #606060;
+    font-family: 'calibri';
+}
+
+.mensaje_modal p:before {
+    content: 'X';
+    font-family: 'calibri';
+    display: inline-block;
+    color: #E25151;
+    margin-right: 8px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#btnClose {
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    background: #E25151;
+    color: #fff;
+    border: 2px solid #B14141;
+    cursor: pointer;
+    
+    cursor:pointer;
+}

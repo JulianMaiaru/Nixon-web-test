@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superb</title>
+    <!-- Font AWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/brands.min.css">
+    <!--Font AWSOME Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!--Font OSWALD-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Custom Scripts JS-->
+    <script src="Js/main.js"></script>
+</head>
+
+<body>
+
+    <!--MENU PRINCIPAL-->
+    <div class="container">
+        <nav class="nav-main"> 
+            <a href="index.html"><img src="images/logo.png" alt="SuperB LOGO" class="nav-brand"></a>
+        <!--BAR DE MENU-->
+        <ul class="nav-menu" >
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="ART.html">ART</a>
+            </li>
+            <li>
+                <a href="Shop.html">SHOP</a>
+            </li>
+            <li>
+                <a href="Contact.html">CONTACT</a>
+            </li>
+        </ul>
+        <!--BAR DE REDES-->
+        <ul class="redes-containers"> 
+            <li><a href="https://www.facebook.com/profile.php?id=100009456888537" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/superb_arg/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/user/NixonVentura/featured" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        </nav>
+    <hr></hr>
+    </div>
+
+    <!--CONTACTO-->
+
+    <section class="form_warp">
+
+        <section class="contact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h3>NICOLAS<br>VENTURA</h3>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span> nicoventu93@hotmail.com </p>
+                <p><span class="fa fa-mobile"></span> (+54) 2235643432 </p>
+            </section>    
+        </section>
+
+        <form action="" class="form_contact" >
+            <h3>Send a Messenge</h3>
+            <div class= "user_info">
+                <label for="names">Name *</label>
+                <input type="text" id="names">
+
+                <label for="phone">Phone number </label>
+                <input type="text" id="phone">
+
+                <label for="email">E-mail *</label>
+                <input type="text" id="email">
+
+                <label for="mensaje">Massenge *</label>
+                <textarea id="mensaje"></textarea>
+
+                <input type="submit" onclick="return enviarFormulario();" value="Send Massege">
+            </div>    
+        </form>
+        <div id='error'></div>    
+    </section>
+    
+    <!--MENSAJE DE ERROR NO UTILIZADO-->
+ <!-- <div class="model_wrap">
+        <div class="mensaje_modal">
+            <h3>Error</h3>
+            <p>Please provide a Name</p>
+            <p>Please provide a Mail</p>
+            <p>Please provide a Messenge</p>
+            <span id="btnClose">Close</span>
+        </div>
+    </div> -->
+    
+
+
+    <footer class="page-bottom">
+        <hr></hr>
+        <p>© 2021 Julian Maiaru.</p> 
+    </footer>
+
+</body>
+</html>
